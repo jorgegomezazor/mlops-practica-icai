@@ -8,7 +8,7 @@ stages:
       md5: 21d441a28bce4417276097df955afc50
       size: 2928
   train:
-    cmd: python train.py --n_estimators 200
+    cmd: python train.py --n_estimators 300
     deps:
     - path: data/iris_dataset.csv
       hash: md5
@@ -24,7 +24,7 @@ stages:
       size: 3396
     params:
       params.yaml:
-        train.n_estimators: 200
+        train.n_estimators: 300
     outs:
     - path: confusion_matrix.png
       hash: md5
@@ -36,5 +36,5 @@ stages:
       size: 17
     - path: model.pkl
       hash: md5
-      md5: 5ea1b8534c551177dc938cdee9e7899f
-      size: 370017
+      md5: 0a06a4ea36f9dd12bec5d3faf37364f8
+      size: 553729
