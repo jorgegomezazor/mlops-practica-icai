@@ -74,7 +74,7 @@ def train_model(n_estimators):
         metrics = {
             "accuracy": accuracy
         }
-        with open("metrics.json", "w") as f:
+        with open("mlflow_metrics.json", "w") as f:
             json.dump(metrics, f)
             
 if __name__ == "__main__":
