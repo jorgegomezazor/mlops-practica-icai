@@ -1,7 +1,7 @@
 [core]
     remote = origin
 [cache]
-    dir = D:\dvc_cache
+    dir = C:\dvc_cache
 ['remote "origin"']
     url = s3://dvc
     endpointurl = https://dagshub.com/jorgegomezazor/mlops-practica-icai.s3
