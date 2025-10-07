@@ -1,0 +1,5 @@
+outs:
+- md5: 9531f019c10824b8026ce642a0e42b90
+  size: 27
+  hash: md5
+  path: params.yml
