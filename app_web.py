@@ -1,4 +1,4 @@
-import streamlit as st #ejecuta
+import streamlit as st #e
 import requests
 import json
 import numpy as np
