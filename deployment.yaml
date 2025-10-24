@@ -16,6 +16,6 @@ app: mlops-api
 spec:
 containers:
 - name: mlops-api
-image: gcr.io/jorgegomezz/mlops-api:latest
+image: gcr.io/theta-wave-476106-t7/mlops-api:latest
 ports:
 - containerPort: 5000
