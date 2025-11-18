@@ -22,7 +22,7 @@ if st.button('Obtener Predicción'):
     features = [sepal_length, sepal_width, petal_length, petal_width]
     payload = {'features': features}
 
-    # URL de la API de predicción (cambia esta URL si la API no está en esa url)
+    # URL de la API de predicción (cambia esta URL si la API no está en esa url) 
     api_url = os.environ.get('API_URL', 'http://localhost:5000/predict')
 
     try:
