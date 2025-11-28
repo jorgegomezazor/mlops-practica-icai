@@ -1,4 +1,5 @@
 kind: PodMonitoring
+apiVersion: v1
 metadata:
   name: mlops-api-pod-monitor
   namespace: default
