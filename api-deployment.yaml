@@ -18,4 +18,5 @@ spec:
       - name: mlops-api
         image: gcr.io/theta-wave-476106-t7/mlops-api:latest
         ports:
-        - containerPort: 5000
+        - name: metrics
+          containerPort: 5000
