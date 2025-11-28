@@ -2,11 +2,11 @@ kind: PodMonitoring
 metadata:
   name: mlops-api-pod-monitor
   namespace: default
-  spec:
-    selector:
-      matchLabels:
-        app: mlops-api
-    endpoints:
-      - port: metrics
-        path: /metrics
-        interval: 30s
+spec:
+  selector:
+    matchLabels:
+      app: mlops-api
+  endpoints:
+    - port: metrics
+      path: /metrics
+      interval: 30s
