@@ -3,13 +3,11 @@ from flask import Flask, request, jsonify, Response
 import numpy as np
 from prometheus_client import Counter, generate_latest, CONTENT_TYPE_LATEST
 
-# ===== NUEVO CÓDIGO =====
 PREDICTION_COUNTER = Counter(
     'iris_prediction_count',
     'Contador de predicciones del modelo Iris por especie',
     ['species']
 )
-# ========================
 
 # Cargar el modelo entrenado
 try:
@@ -21,11 +19,10 @@ except FileNotFoundError:
 # Inicializar la aplicación Flask
 app = Flask(__name__)
 
-# ===== NUEVO CÓDIGO =====
 @app.route('/metrics')
 def metrics():
     return Response(generate_latest(), mimetype=CONTENT_TYPE_LATEST)
-# ========================
+
 
 @app.route('/predict', methods=['POST'])
 def predict():
